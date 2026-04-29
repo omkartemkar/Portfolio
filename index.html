@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar A Temkar - CS Student & AI/ML Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-bg"></div>
+        <div class="particles"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">OAT</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            
+            <div class="hero-text">
+                <h1 class="hero-name">
+                    <span class="typing-text">Omkar A Temkar</span>
+                </h1>
+                <p class="hero-title">Computer Science Student | AI & ML Enthusiast</p>
+                <p class="hero-tagline">Building intelligent, real-time solutions using modern technologies.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                        <span class="btn-text">View Projects</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </button>
+                    <button class="btn btn-secondary" onclick="downloadResume()">
+                        <span class="btn-text">Download Resume</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </button>
+                    <button class="btn btn-tertiary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                        <span class="btn-text">Contact</span>
+                        <span class="btn-icon"><i class="fas fa-envelope"></i></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="profile.jpg" alt="Omkar A Temkar">
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-card glass-effect">
+                <div class="card-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Who Am I?</h3>
+                <p>I am a final-year Computer Science student with a strong interest in Artificial Intelligence, Machine Learning, and Computer Vision. I enjoy building practical, real-world solutions using modern technologies and continuously improving my skills through hands-on projects.</p>
+            </div>
+            
+            <div class="about-card glass-effect">
+                <div class="card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>My Passion</h3>
+                <p>I specialize in building intelligent systems and scalable applications. My expertise spans machine learning model development, computer vision, and full-stack application design, with a strong focus on AI-driven, real-time solutions that address practical challenges.</p>
+            </div>
+            
+            <div class="about-card glass-effect">
+                <div class="card-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>My Goal</h3>
+                <p>My goal is to create impactful technology that bridges the gap between complex AI/ML concepts and real-world applications. I am committed to continuous learning and staying at the forefront of innovation, striving to build solutions that are both powerful and user-centric.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-title">
+            <h2>Skills & Expertise</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="skills-container">
+            <!-- Programming Skills -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-code"></i> Programming Languages
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h4>Python</h4>
+                        <p>Expert</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                        <h4>Java</h4>
+                        <p>Proficient</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">C</div>
+                        <h4>C</h4>
+                        <p>Proficient</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">C++</div>
+                        <h4>C++</h4>
+                        <p>Proficient</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-globe"></i> Web Development
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML5</h4>
+                        <p>Expert</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-css3"></i></div>
+                        <h4>CSS3</h4>
+                        <p>Expert</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4>JavaScript</h4>
+                        <p>Expert</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-mobile"></i></div>
+                        <h4>Responsive Design</h4>
+                        <p>Expert</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-tools"></i> Tools & Technologies
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-git"></i></div>
+                        <h4>Git</h4>
+                        <p>Proficient</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>Firebase</h4>
+                        <p>Proficient</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h4>MySQL</h4>
+                        <p>Proficient</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>ML/AI</h4>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI/ML Specializations -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-cube"></i> AI/ML Specializations
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                        <h4>Deep Learning</h4>
+                        <p>Advanced</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-image"></i></div>
+                        <h4>Computer Vision</h4>
+                        <p>Advanced</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                        <h4>NLP</h4>
+                        <p>Proficient</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h4>Data Analysis</h4>
+                        <p>Proficient</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glass-effect">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>UltraStock AI</h3>
+                </div>
+                <p class="project-description">An intelligent stock market prediction system using deep learning and real-time data analysis. Employs LSTM networks and time-series forecasting to predict market trends.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">TensorFlow</span>
+                    <span class="tech-badge">LSTM</span>
+                    <span class="tech-badge">APIs</span>
+                </div>
+                <button class="project-btn">
+                    <span>View Demo</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card glass-effect">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Medical Scanner App</h3>
+                </div>
+                <p class="project-description">A mobile application for medical image analysis using computer vision. Detects and classifies medical conditions from X-rays and CT scans with high accuracy.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Android</span>
+                    <span class="tech-badge">OpenCV</span>
+                    <span class="tech-badge">CNN</span>
+                    <span class="tech-badge">Firebase</span>
+                </div>
+                <button class="project-btn">
+                    <span>View Demo</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass-effect">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Sign Language Translator</h3>
+                </div>
+                <p class="project-description">Real-time sign language recognition system using deep learning. Translates hand gestures to text and speech for enhanced communication accessibility.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">TensorFlow</span>
+                    <span class="tech-badge">OpenCV</span>
+                    <span class="tech-badge">MediaPipe</span>
+                </div>
+                <button class="project-btn">
+                    <span>View Demo</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card glass-effect">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Route Optimization for Highway Construction</h3>
+                </div>
+                <p class="project-description">Developed a deep learning model to analyze satellite imagery and recommend optimal highway routes. Reduced construction costs and land acquisition conflicts by identifying efficient and feasible pathways.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Deep Learning</span>
+                    <span class="tech-badge">Satellite Imagery</span>
+                    <span class="tech-badge">TensorFlow</span>
+                    <span class="tech-badge">GIS</span>
+                </div>
+                <button class="project-btn">
+                    <span>View Demo</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card glass-effect">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Crop Recommendation System</h3>
+                </div>
+                <p class="project-description">Created a machine learning system to recommend suitable crops based on soil, weather, and environmental data. Applied data preprocessing techniques and ML algorithms to improve prediction accuracy.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Machine Learning</span>
+                    <span class="tech-badge">Data Analysis</span>
+                    <span class="tech-badge">scikit-learn</span>
+                </div>
+                <button class="project-btn">
+                    <span>View Demo</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card glass-effect">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Multiple Disease Prediction System</h3>
+                </div>
+                <p class="project-description">Developed a web application that predicts diseases such as Diabetes, Heart Disease, and Parkinson's using machine learning models. Designed a user-friendly Streamlit interface with real-time prediction results.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Streamlit</span>
+                    <span class="tech-badge">ML</span>
+                    <span class="tech-badge">Healthcare</span>
+                </div>
+                <button class="project-btn">
+                    <span>View Demo</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card glass-effect">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Application</h3>
+                </div>
+                <p class="project-description">Real-time weather application displaying current conditions, forecasts, and historical weather data using API integration and client-side caching for fast responses.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">APIs</span>
+                    <span class="tech-badge">OpenWeatherMap</span>
+                    <span class="tech-badge">Responsive</span>
+                </div>
+                <button class="project-btn">
+                    <span>View Demo</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="section-title">
+            <h2>Experience</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass-effect">
+                    <div class="experience-header">
+                        <h3>Artificial Intelligence Intern</h3>
+                        <span class="company">Edutainer</span>
+                    </div>
+                    <p class="experience-duration">
+                        <i class="fas fa-calendar"></i> Feb 2026 – Present
+                    </p>
+                    <p class="experience-description">
+                        Contributing to AI/ML projects involving data preprocessing and model development. Applying machine learning techniques to solve real-world problems, including building and evaluating models for educational applications.
+                    </p>
+                    <div class="experience-skills">
+                        <span>Python</span>
+                        <span>Data Preprocessing</span>
+                        <span>Model Development</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass-effect">
+                    <div class="experience-header">
+                        <h3>Machine Learning Intern</h3>
+                        <span class="company">Skill Craft</span>
+                    </div>
+                    <p class="experience-duration">
+                        <i class="fas fa-calendar"></i> Aug 2025 - Sep 2025
+                    </p>
+                    <p class="experience-description">
+                        Developed machine learning models and algorithms; worked on data preprocessing and model optimization techniques. Built predictive models using Python and scikit-learn, implemented data preprocessing pipelines, and optimized model performance through hyperparameter tuning.
+                    </p>
+                    <div class="experience-skills">
+                        <span>Python</span>
+                        <span>scikit-learn</span>
+                        <span>Data Preprocessing</span>
+                        <span>Hyperparameter Tuning</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass-effect">
+                    <div class="experience-header">
+                        <h3>C++ Developer Intern</h3>
+                        <span class="company">Code Soft</span>
+                    </div>
+                    <p class="experience-duration">
+                        <i class="fas fa-calendar"></i> Aug 2025 - Sep 2025
+                    </p>
+                    <p class="experience-description">
+                        Focused on C++ application development, algorithm implementation, and software optimization. Developed efficient C++ applications and algorithms, implemented data structures and optimization techniques, and collaborated in code reviews to follow best practices.
+                    </p>
+                    <div class="experience-skills">
+                        <span>C++</span>
+                        <span>Algorithms</span>
+                        <span>Data Structures</span>
+                        <span>Code Reviews</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="section-title">
+            <h2>Certifications</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="certifications-grid">
+            <!-- Certification 1 -->
+            <div class="certification-card glass-effect">
+                <div class="cert-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="cert-content">
+                    <h3>Google Cloud Career Launchpad</h3>
+                    <p class="cert-track">Cloud Engineer Track</p>
+                    <span class="cert-issuer"><i class="fas fa-building"></i> Google Cloud</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-certificate"></i>
+                </div>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="certification-card glass-effect">
+                <div class="cert-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="cert-content">
+                    <h3>OCI 2025 Certified Generative AI Professional</h3>
+                    <p class="cert-track">Oracle Cloud Infrastructure</p>
+                    <span class="cert-issuer"><i class="fas fa-building"></i> Oracle University</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-certificate"></i>
+                </div>
+            </div>
+
+            <!-- Certification 3 -->
+            <div class="certification-card glass-effect">
+                <div class="cert-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="cert-content">
+                    <h3>The Front-End Web Developer Bootcamp</h3>
+                    <p class="cert-track">Full Front-End Development</p>
+                    <span class="cert-issuer"><i class="fas fa-building"></i> Udemy</span>
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-certificate"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Let's Connect</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-item glass-effect">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p><a href="mailto:omkartemkar24@gmail.com">omkartemkar24@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item glass-effect">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+916363265484">+91 6363265484</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item glass-effect">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Bengaluru, Karnataka, India - 560098</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form glass-effect" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://github.com/omkartemkar" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/omkartemkar" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:omkartemkar24@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Omkar A Temkar. All rights reserved.</p>
+            <p>Designed & Built with <span class="heart">❤</span> using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
