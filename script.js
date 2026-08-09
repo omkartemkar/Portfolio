@@ -380,7 +380,7 @@ if (contactForm) {
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'Omkar_Resume_26.pdf';
+    link.href = 'Omkar_Resume_2026.pdf';
     link.download = 'Omkar_A_Temkar_Resume.pdf';
     document.body.appendChild(link);
     link.click();
